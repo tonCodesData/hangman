@@ -4,7 +4,7 @@ class Hangman:
     def __init__(self, word_list, num_lives=5): 
         self.word = random.choice(word_list)
         self.word_guessed = ['_']*len(self.word)
-        self.num_letters = len(set(self.word)) ## not sure
+        self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.word_list = word_list
         self.list_of_guesses = []
@@ -37,6 +37,9 @@ class Hangman:
                 print("You already tried that letter!")
             else: 
                 self.check_guess(self.guess)
+            
+            if self.num_lives == 0 or self.num_letters == 0:
+                break
     
 def play_game(word_list):    
     num_lives = 5
@@ -56,5 +59,3 @@ def play_game(word_list):
 
 play_game(["apple", "banana"])
 
-
-        
