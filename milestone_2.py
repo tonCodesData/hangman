@@ -24,3 +24,16 @@ print(word)
 # Step 2. Assign the input to a variable called guess.
 guess = input("enter a single letter ")
 
+# task 4
+# Usually, when taking input from users, it is best to validate that the input makes sense. 
+# For example, we may want to ensure that only a single letter is entered and that only alphabetical characters are provided by the user. 
+# To do this, create conditional checks that must be passed before the input can be accepted.
+# Step 1. Create an if statement that checks if the length of the input is equal to 1 and the input is an alphabet.
+if len(guess) == 1 and guess.isalpha(): 
+  # Step 2: In the body of the if statement, print a message that says "Good guess!".
+  print("Good guess!")
+  
+# Step 3: Create an else block that prints "Oops! That is not a valid input." if the preceeding conditions are not met.
+else:
+  print("Oops! That is not a valid input.")
+  
