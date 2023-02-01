@@ -16,3 +16,11 @@ print(word_list)
 word = random.choice(word_list)
 # Step 5: Print out word to the standard output. Run the code several times and observe the words printed out after each run.
 print(word)
+
+# Task 3
+# In this task, you are required to take user input. As you now know, the print() function in Python displays output on the screen. 
+# Conversely, Python has an input() function that takes input from the screen. Note that the input function returns the user input in form of a string.
+# Step 1. Using the input function, ask the user to enter a single letter.
+# Step 2. Assign the input to a variable called guess.
+guess = input("enter a single letter ")
+
