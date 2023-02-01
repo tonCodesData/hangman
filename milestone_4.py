@@ -35,4 +35,5 @@ class Hangman:
                 continue          
 
 
-Hangman(["apple", "banana"], 5).ask_for_input()
+new_game = Hangman(["apple", "banana"], 5)
+new_game.ask_for_input()
