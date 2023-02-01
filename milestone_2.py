@@ -1,5 +1,5 @@
 # Task 1: Define the lost of possible words
-
+import random
 # Step 1. Create a list containing the names of your 5 favorite fruits.
 # Step 2. Assign this list to a variable called word_list.
 word_list = ["apple", "banana", "grape", "orange", "mango"]
