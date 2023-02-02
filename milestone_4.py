@@ -21,13 +21,13 @@ class Hangman:
     
     def ask_for_input(self):
         while True:
-            self.guess = input("guess the letter ")            
-            if not self.guess.isalpha() or len(self.guess)!=1 : 
+            guess = input("guess the letter ")            
+            if not guess.isalpha() or len(guess)!=1 : 
                 print("Invalid letter. Please, enter a single alphabetical character.")
-            elif self.guess in self.list_of_guesses:
+            elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else: 
-                self.check_guess(self.guess)
+                self.check_guess(guess)
 
 
 new_game = Hangman(["apple", "banana"], 5)
