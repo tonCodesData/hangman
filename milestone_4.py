@@ -52,6 +52,6 @@ class Hangman:
                 print("----------------------------------------")
                 if self.num_lives == 0 or self.num_letters == 0:
                     break
-    
+                
 Hangman(["apple", "banana"], 5).ask_for_input()
 
