@@ -35,9 +35,8 @@ class Hangman:
                 print("You already tried that letter!")
             else: 
                 self.check_guess(self.guess)
-            
-            if self.num_lives == 0 or self.num_letters == 0:
-                break
+                if self.num_lives == 0 or self.num_letters == 0:
+                    break
 
 
 new_game = Hangman(["apple", "banana"], 5)
