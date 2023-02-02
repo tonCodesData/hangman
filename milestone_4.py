@@ -15,12 +15,12 @@ class Hangman:
         if guess in self.word: 
             print(f"Good guess! {guess} is in the word.")
             self.num_letters -= 1
-        else:
-            self.num_lives -= 1
+        #else:
+         #   self.num_lives -= 1
 
     
     def ask_for_input(self):
-        while True:
+        #while True:
             self.guess = input("guess the letter ")            
             if not self.guess.isalpha() or len(self.guess)!=1 : 
                 print("Invalid letter. Please, enter a single alphabetical character.")
@@ -29,10 +29,10 @@ class Hangman:
             else: 
                 self.check_guess(self.guess)
             
-            if self.num_lives == 0 or self.num_letters == 0:
-                break
-            else: 
-                continue          
+            #if self.num_lives == 0 or self.num_letters == 0:
+             #   break
+            #else: 
+                #continue          
 
 
 new_game = Hangman(["apple", "banana"], 5)
