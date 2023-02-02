@@ -23,6 +23,7 @@ class Hangman:
                 print("You already tried that letter!")
             else: 
                 self.check_guess(self.guess)
+                break
             
 Hangman(["apple", "banana"], 5).ask_for_input()
 
